@@ -1,0 +1,33 @@
+# transfer  
+POST https://my-transfert-agent-service.herokuapp.com/api/transfer-agent/transfert
+Content-Type: application/json
+
+{
+  "accountId": "61d05edb2eabd15706bb139e",
+  "amount": 1000,
+  "destinationAccountId": "61d0d1b987d7762ce82ef596" 
+}
+
+###
+ 
+# virment
+POST https://my-transfert-agent-service.herokuapp.com/api/transfer-agent/virment/activer
+Content-Type: application/json
+{
+    
+    "accountId": "61d05edb2eabd15706bb139e",
+      "amount": 1000,
+}
+
+### 
+
+# retirer
+POST https://my-transfert-agent-service.herokuapp.com/api/transfer-agent/retirer/disactiver
+Content-Type: application/json
+{
+    
+    "accountId": "61d05edb2eabd15706bb139e",
+      "amount": 1000,
+}
+
+
